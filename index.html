@@ -1,45 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kumar Manasvi - Portfolio</title>
-    <meta name="description" content="Software Engineer | Backend Developer | AI Enthusiast">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kumar Manasvi - Portfolio</title>
+  <meta name="description" content="Software Engineer | Backend Developer | AI Enthusiast" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #111827;
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    header {
+      background-color: #90caf0;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header img {
+      border-radius: 9999px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1f2937;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-icons img {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .contact-icons a:hover img {
+      transform: scale(1.15);
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      color: inherit;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #90caf0;
+      color: #374151;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      border-top: 1px solid #e5e7eb;
+      z-index: 999;
+    }
+
+    /* 🌙 DARK MODE SUPPORT */
+    body.dark-mode {
+      background-color: #010918;
+      color: #f3f4f6;
+    }
+
+    header.dark-mode {
+      background-color: #1f2937;
+      color: white;
+    }
+
+    section.dark-mode h2 {
+      border-color: #0f151d;
+      color: #e2e8f0;
+    }
+
+    footer.dark-mode {
+      background-color: #1f2937;
+      color: #d1d5db;
+      border-color: #374151;
+    }
+
+    footer.dark-mode .contact-icons img {
+      filter: brightness(0.85);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Kumar Manasvi</h1>
-        <p>Software Engineer | Backend Developer | AI Enthusiast</p>
-    </header>
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" />
+    <h1>Kumar Manasvi</h1>
+    <p>Software Engineer | Backend Developer | AI Enthusiast</p>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I am Kumar Manasvi, a Software Engineer by profession. I like working on projects that are fun as well as impactful.</p>
-        <p>My latest project required me to build a scalable application to accommodate a large number of users. I found this as an opportunity not only to lead the project but dive deep into languages such as Golang and React Native.</p>
-        <p>Before this, I worked as a Data Scientist with CUDA-based machine learning models.</p>
-        <p>I did my Bachelors in Computer Science from the University of Waterloo. During my senior years, I got to work on projects in computer graphics, big data, and machine learning.</p>
-        <p>I like visiting beaches or going on hiking trips. Other than this, you will mostly find me reading a book or working on a project when I am at home.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I am Kumar Manasvi, a Software Engineer by profession. I like working on projects that are fun as well as impactful.</p>
+    <p>My latest project required me to build a scalable application to accommodate a large number of users. I found this as an opportunity not only to lead the project but dive deep into languages such as Golang and React Native.</p>
+    <p>Before this, I worked as a Data Scientist with CUDA-based machine learning models.</p>
+    <p>I did my Bachelors in Computer Science from the University of Waterloo.</p>
+    <p>I like visiting beaches or going on hiking trips. Other than this, you will mostly find me reading a book or working on a project when I am at home.</p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Real-time Transaction Processing</strong> - Optimized payment system reducing latency by 30%.</li>
-            <li><strong>In-App Messaging Service</strong> - Built a scalable chat microservice saving $10,000/month.</li>
-            <li><strong>AI-Powered Financial Analytics</strong> - Used machine learning for real estate price prediction.</li>
-        </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Real-time Transaction Processing</strong> - Optimized payment system reducing latency by 30%.</li>
+      <li><strong>In-App Messaging Service</strong> - Built a scalable chat microservice saving $10,000/month.</li>
+      <li><strong>AI-Powered Financial Analytics</strong> - Used machine learning for real estate price prediction.</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kumar.manasvi@example.com">kumar.manasvi@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kumarmanasvi" target="_blank">kumarmanasvi</a></p>
-        <p>GitHub: <a href="https://github.com/kumarmanasvi" target="_blank">github.com/kumarmanasvi</a></p>
-    </section>
+  <footer id="site-footer">
+    <div class="contact-icons">
+      <a href="mailto:kumarmanasvi30@gmail.com" target="_blank" title="Email">
+        <img id="email-icon" src="email.png" alt="Email Icon" />
+      </a>
+      <a href="https://www.linkedin.com/in/kmanasvi" target="_blank" title="LinkedIn">
+        <img id="linkedin-icon" src="linkedin.svg" alt="LinkedIn Icon" />
+      </a>
+      <a href="https://github.com/kmanasvi" target="_blank" title="GitHub">
+        <img id="github-icon" src="github.svg" alt="GitHub Icon" />
+      </a>
+      <a href="kmanasvi_CV_S.pdf" download title="Download Resume">
+        <img src="resume.png" alt="Download Resume" />
+      </a>
+      <button id="toggle-theme" class="toggle-btn" title="Toggle Theme">
+        <img id="theme-icon" src="moon.png" alt="Toggle Dark Mode" width="24" height="24" />
+      </button>
+    </div>
+    <div style="margin-top: 0.3rem;">
+      © 2024 Kumar Manasvi    +1 5197215253    Toronto
+    </div>
+  </footer>
+  
 
-    <footer>
-        <p>© 2024 Kumar Manasvi. All rights reserved.</p>
-    </footer>
+  <!-- 🔁 Move the script here so it runs after DOM is loaded -->
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    const themeIcon = document.getElementById('theme-icon');
+
+    function updateIconsForTheme(isDark) {
+        themeIcon.src = isDark ? 'sun.svg' : 'moon.png';
+        themeIcon.alt = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+    }
+  
+    toggleBtn.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark-mode');
+      document.querySelector('header').classList.toggle('dark-mode');
+      document.querySelectorAll('section').forEach(s => s.classList.toggle('dark-mode'));
+      document.querySelector('footer').classList.toggle('dark-mode');
+      updateIconsForTheme(isDark);
+    });
+
+    // Set correct icons if page starts in dark mode (optional)
+    window.onload = () => {
+      const isDark = document.body.classList.contains('dark-mode');
+      updateIconsForTheme(isDark);
+    };
+  </script>
+  
 </body>
 </html>
